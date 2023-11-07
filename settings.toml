@@ -1,0 +1,13 @@
+[default]
+VISIBILITY_TIMEOUT = 3600
+PROJECT_NAME = "notification-service"
+
+[development]
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
+
+
+[production]
+REDIS_HOST = ""
+REDIS_PORT = ""
+
