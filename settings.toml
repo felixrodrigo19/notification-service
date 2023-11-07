@@ -1,7 +1,14 @@
 [default]
-
+VISIBILITY_TIMEOUT = 3600
 
 [development]
+REDIS_HOST = "localhost"
+REDIS_PORT = 6379
 
+BROKER_URL = "sentinel://localhost:26379;sentinel://localhost:26380;sentinel://localhost:26381"
 
 [production]
+REDIS_HOST = ""
+REDIS_PORT = ""
+
+BROKER_URL = ""
